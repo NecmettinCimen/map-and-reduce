@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.5f361e03.chunk.css",
-    "main.js": "/static/js/main.077baac4.chunk.js",
-    "main.js.map": "/static/js/main.077baac4.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.b6da7499.js",
-    "runtime-main.js.map": "/static/js/runtime-main.b6da7499.js.map",
-    "static/css/2.7df41cd5.chunk.css": "/static/css/2.7df41cd5.chunk.css",
-    "static/js/2.2bdecdfb.chunk.js": "/static/js/2.2bdecdfb.chunk.js",
-    "static/js/2.2bdecdfb.chunk.js.map": "/static/js/2.2bdecdfb.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.19d2df93dd19f3c9b5602f525a482fc4.js": "/precache-manifest.19d2df93dd19f3c9b5602f525a482fc4.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/2.7df41cd5.chunk.css.map": "/static/css/2.7df41cd5.chunk.css.map",
-    "static/css/main.5f361e03.chunk.css.map": "/static/css/main.5f361e03.chunk.css.map",
-    "static/js/2.2bdecdfb.chunk.js.LICENSE.txt": "/static/js/2.2bdecdfb.chunk.js.LICENSE.txt",
-    "static/media/semantic.min.css": "/static/media/outline-icons.ef60a4f6.woff"
+    "main.css": "/necmettincimen.github.io/mapandreduce/static/css/main.523f09c5.chunk.css",
+    "main.js": "/necmettincimen.github.io/mapandreduce/static/js/main.4759fda5.chunk.js",
+    "main.js.map": "/necmettincimen.github.io/mapandreduce/static/js/main.4759fda5.chunk.js.map",
+    "runtime-main.js": "/necmettincimen.github.io/mapandreduce/static/js/runtime-main.cf66d5c6.js",
+    "runtime-main.js.map": "/necmettincimen.github.io/mapandreduce/static/js/runtime-main.cf66d5c6.js.map",
+    "static/css/2.ac34eac2.chunk.css": "/necmettincimen.github.io/mapandreduce/static/css/2.ac34eac2.chunk.css",
+    "static/js/2.ddf39cba.chunk.js": "/necmettincimen.github.io/mapandreduce/static/js/2.ddf39cba.chunk.js",
+    "static/js/2.ddf39cba.chunk.js.map": "/necmettincimen.github.io/mapandreduce/static/js/2.ddf39cba.chunk.js.map",
+    "index.html": "/necmettincimen.github.io/mapandreduce/index.html",
+    "precache-manifest.ec6660ea7828456df940d86c049ae99d.js": "/necmettincimen.github.io/mapandreduce/precache-manifest.ec6660ea7828456df940d86c049ae99d.js",
+    "service-worker.js": "/necmettincimen.github.io/mapandreduce/service-worker.js",
+    "static/css/2.ac34eac2.chunk.css.map": "/necmettincimen.github.io/mapandreduce/static/css/2.ac34eac2.chunk.css.map",
+    "static/css/main.523f09c5.chunk.css.map": "/necmettincimen.github.io/mapandreduce/static/css/main.523f09c5.chunk.css.map",
+    "static/js/2.ddf39cba.chunk.js.LICENSE.txt": "/necmettincimen.github.io/mapandreduce/static/js/2.ddf39cba.chunk.js.LICENSE.txt",
+    "static/media/semantic.min.css": "/necmettincimen.github.io/mapandreduce/static/media/outline-icons.ef60a4f6.woff"
   },
   "entrypoints": [
-    "static/js/runtime-main.b6da7499.js",
-    "static/css/2.7df41cd5.chunk.css",
-    "static/js/2.2bdecdfb.chunk.js",
-    "static/css/main.5f361e03.chunk.css",
-    "static/js/main.077baac4.chunk.js"
+    "static/js/runtime-main.cf66d5c6.js",
+    "static/css/2.ac34eac2.chunk.css",
+    "static/js/2.ddf39cba.chunk.js",
+    "static/css/main.523f09c5.chunk.css",
+    "static/js/main.4759fda5.chunk.js"
   ]
 }
