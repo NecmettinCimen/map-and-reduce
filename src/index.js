@@ -7,7 +7,7 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { Socket } from 'react-socket-io';
-const uri = 'https://socket.necmettincimen.com';
+const uri = 'https://socketmapandreduce.herokuapp.com/';
 const options = { transports: ['websocket'] };
 
 ReactDOM.render(
