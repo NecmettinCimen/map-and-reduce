@@ -1,0 +1,15 @@
+{
+  "name": "mapandreducesocket",
+  "version": "1.0.0",
+  "description": "Map and Reduce Socket",
+  "main": "index.js",
+  "dependencies": {
+    "express": "~4.17.1",
+    "socket.io": "~2.3.0"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Necmettin Cimen",
+  "license": "ISC"
+}
