@@ -25,7 +25,7 @@ io.on('connection', (socket) => {
       const element = readyUsers[index];
       element.durumcode = 1;
       element.durum = status[element.durumcode];
-      io.sockets.sockets[element.id].send({ type: 'run', id: data.id, reducefuncstr: data.reducefuncstr })
+      io.sockets.sockets[element.id].send({ type: 'run', id: data.id, mapfuncstr: data.mapfuncstr })
     }
     data.status = status[1]
     data.users = readyUsers;
@@ -44,7 +44,7 @@ io.on('connection', (socket) => {
     jobs[jobindex].status =
       status[jobs[jobindex].socketresults.length == jobs[jobindex].users.length ? 1 : 2] + " " + jobs[jobindex].socketresults.length + " / " + jobs[jobindex].users.length
 
-    eval(jobs[jobindex].mapfuncstr + 'map(data)')
+    eval(jobs[jobindex].reducefuncstr + 'reduce(data)')
 
     socket.send({ type: 'jobupdate', job: jobs[jobindex] })
 
