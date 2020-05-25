@@ -1,25 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { createStore } from 'redux';
+import {Provider} from 'react-redux';
+import {BrowserRouter} from 'react-router-dom';
 
-import 'semantic-ui-css/semantic.min.css'
-import './index.css';
-
-import App from './App';
+import App from './App/index';
 import * as serviceWorker from './serviceWorker';
-import { Socket } from 'react-socket-io';
-const uri = 'https://socket.necmettincimen.com';
-const options = { transports: ['websocket'] };
+import reducer from './store/reducer';
+import config from './config';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <Socket uri={uri} options={options}>
-      <App />
-    </Socket>
-  </React.StrictMode>,
-  document.getElementById('root')
+const store = createStore(reducer);
+
+const app = (
+    <Provider store={store}>
+        <BrowserRouter basename={config.basename}>
+            {/* basename="/datta-able" */}
+            <App />
+        </BrowserRouter>
+    </Provider>
 );
+
+ReactDOM.render(app, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.register();
+// Learn more about service workers: http://bit.ly/CRA-PWA
+serviceWorker.unregister();

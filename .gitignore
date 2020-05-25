@@ -7,6 +7,11 @@
 /bin
 /obj
 
+/MapandReduceApi/bin
+/MapandReduceApi/obj
+/MapandReduceApi/obj/Debug
+/MapandReduceApi/obj/Debug/netcoreapp3.1
+
 # Common node modules locations
 /node_modules
 /wwwroot/node_modules
