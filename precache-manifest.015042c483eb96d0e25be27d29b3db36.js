@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "81dfb905da4747dd633562f136025140",
+    "revision": "c318c158de29826907e71fae3117eb87",
     "url": "/mapandreduce/index.html"
   },
   {
@@ -36,8 +36,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/mapandreduce/static/js/11.7217defd.chunk.js"
   },
   {
-    "revision": "1fa7cf54cee65093393f",
-    "url": "/mapandreduce/static/js/12.a5054fd4.chunk.js"
+    "revision": "c2768334adc6ac927d62",
+    "url": "/mapandreduce/static/js/12.f8ed6548.chunk.js"
   },
   {
     "revision": "58e89755e43c009cb1e9",
@@ -76,8 +76,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/mapandreduce/static/js/main.f0f1860b.chunk.js"
   },
   {
-    "revision": "279cb8570eb6a34de378",
-    "url": "/mapandreduce/static/js/runtime~main.22c5d2c5.js"
+    "revision": "94bc3eced3f5c2d01236",
+    "url": "/mapandreduce/static/js/runtime~main.bd1a2c99.js"
   },
   {
     "revision": "674f50d287a8c48dc19ba404d20fe713",
