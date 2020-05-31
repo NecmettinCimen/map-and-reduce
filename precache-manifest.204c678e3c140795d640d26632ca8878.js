@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9c5d7f80dd38fdc57959ea5edbda8221",
+    "revision": "81dfb905da4747dd633562f136025140",
     "url": "/mapandreduce/index.html"
   },
   {
@@ -72,8 +72,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/mapandreduce/static/js/9.226263a6.chunk.js"
   },
   {
-    "revision": "fd9bebcd78bdcd851961",
-    "url": "/mapandreduce/static/js/main.5ce629c2.chunk.js"
+    "revision": "4d929984ae137c8c54c3",
+    "url": "/mapandreduce/static/js/main.f0f1860b.chunk.js"
   },
   {
     "revision": "279cb8570eb6a34de378",
