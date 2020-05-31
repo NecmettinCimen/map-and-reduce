@@ -85,7 +85,7 @@ class DetailJob extends React.Component {
 
     downloadCsvFile = () => {
         const element = document.createElement("a");
-        const file = new Blob([this.state.job.result.join('\n')], { type: 'text/csv' });
+        const file = new Blob([this.state.job.result.join ? this.state.job.result.join('\n') : this.state.job.result], { type: 'text/csv' });
         element.href = URL.createObjectURL(file);
         element.download = this.state.name + this.state.time + ".csv";
         document.body.appendChild(element);
