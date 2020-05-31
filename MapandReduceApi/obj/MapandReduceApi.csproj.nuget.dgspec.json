@@ -1,21 +1,18 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\g3250\\Desktop\\DagitikSistemler\\mapandreduce\\MapandReduceApi\\MapandReduceApi.csproj": {}
+    "C:\\Users\\g3250\\Desktop\\mapandreduce\\MapandReduceApi\\MapandReduceApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\g3250\\Desktop\\DagitikSistemler\\mapandreduce\\MapandReduceApi\\MapandReduceApi.csproj": {
+    "C:\\Users\\g3250\\Desktop\\mapandreduce\\MapandReduceApi\\MapandReduceApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\g3250\\Desktop\\DagitikSistemler\\mapandreduce\\MapandReduceApi\\MapandReduceApi.csproj",
+        "projectUniqueName": "C:\\Users\\g3250\\Desktop\\mapandreduce\\MapandReduceApi\\MapandReduceApi.csproj",
         "projectName": "MapandReduceApi",
-        "projectPath": "C:\\Users\\g3250\\Desktop\\DagitikSistemler\\mapandreduce\\MapandReduceApi\\MapandReduceApi.csproj",
+        "projectPath": "C:\\Users\\g3250\\Desktop\\mapandreduce\\MapandReduceApi\\MapandReduceApi.csproj",
         "packagesPath": "C:\\Users\\g3250\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\g3250\\Desktop\\DagitikSistemler\\mapandreduce\\MapandReduceApi\\obj\\",
+        "outputPath": "C:\\Users\\g3250\\Desktop\\mapandreduce\\MapandReduceApi\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
           "C:\\Users\\g3250\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.2.config",
@@ -43,6 +40,10 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[3.1.4, )"
+            },
             "microsoft.entityframeworkcore.design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
@@ -64,6 +65,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.2, 3.1.2]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -72,7 +79,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
         }
       }
     }

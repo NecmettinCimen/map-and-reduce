@@ -13,18 +13,22 @@ class NewJob extends Component {
     state = {
         id: 0,
         name: 'İş ismi',
-        mapfuncstr: `function map(data){
-          // map edilecek konuzu bu kısma yazınız
-          var result = 1;
-          for(var i=1;i<10;i++){
-            result *=i ;
-          }
-          return result;
-        }`,
-        reducefuncstr: `function reduce(data){
-          // reduce edilecek konuzu bu kısma yazınız
-          jobs[jobindex].result= jobs[jobindex].result*data;
-        }`,
+        mapfuncstr: `function map(data, index){
+            // map edilecek konuzu bu kısma yazınız
+            var result = 1;
+            for(var i=1;i<50*index;i++){
+              result *=i ;
+            }
+            return result;
+          }`,
+        reducefuncstr: `function reduce(data, oldresult){
+            // reduce edilecek konuzu bu kısma yazınız
+  if(oldresult==0){
+  oldresult=1;
+  }
+  
+           return oldresult*data;
+          }`,
         success: null,
         exmessage: '',
         loading: false,

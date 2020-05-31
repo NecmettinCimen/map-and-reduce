@@ -36,8 +36,12 @@ namespace MapandReduceApi
                          .AllowAnyMethod();
           });
 });
-            services.AddDbContext<MapAndReduceContext>(options =>
-            options.UseSqlServer("Server=localhost\\sqlexpress;Database=dbmapandreduce;Trusted_Connection=True;MultipleActiveResultSets=true"));
+            string connectionName = "MapAndReduceContext";
+// #if DEBUG
+//             connectionName += "Debug";
+// #endif
+
+            services.AddDbContext<MapAndReduceContext>(options => options.UseSqlite(Configuration.GetConnectionString(connectionName)));
             services.AddScoped<IBaseService, BaseService>();
             services.AddControllers();
         }

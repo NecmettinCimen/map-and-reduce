@@ -40,3 +40,9 @@ public class Job:BaseEntity{
     [MaxLength(int.MaxValue)]
     public string ReduceFuncStr { get; set; }
 }
+
+public class JobRunHistory:BaseEntity{
+    [Required]
+    [MaxLength(250)]
+    public string Name { get; set; }
+}

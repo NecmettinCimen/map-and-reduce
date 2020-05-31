@@ -1,14 +1,14 @@
-var baseUrl = "https://localhost:5001"
+var baseUrl = "https://mapandreduceapi.azurewebsites.net"
 
 var baseService = {
     post: async (url, model) => {
         var response = await fetch(`${baseUrl}/${url}`, { method: 'post', headers: { 'content-type': 'application/json' }, body: JSON.stringify(model) })
-        if (response.status == 400) {
+        if (response.status === 400) {
             return {
                 success:false,
                 errorMsg:'Lütfen Girdiğiniz Bilgileri Kontrol Ediniz.'
             }
-        }else if (response.status == 500) {
+        }else if (response.status === 500) {
             return {
                 success:false,
                 errorMsg:'Sunucu Hatası Lütfen Data Sonra Tekrar Deneyiniz.'

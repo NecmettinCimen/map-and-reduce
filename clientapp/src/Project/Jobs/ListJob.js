@@ -46,7 +46,6 @@ class ListJob extends Component {
                                                 <Pagination>
                                                     <Link to={`/jobs/edit/${item.id}`}><Button variant="secondary">Düzenle</Button></Link>
                                                     <Link to={`/jobs/run/${item.id}`}><Button variant="warning">Çalıştır</Button></Link>
-                                                    <Link to={`/jobs/detail/${item.id}`}><Button variant="info">Detaylar</Button></Link>
                                                 </Pagination>
                                             </td>
                                         </tr>)}

@@ -1,12 +1,16 @@
-import React, {Component} from 'react';
-import {connect} from 'react-redux';
-import {Dropdown} from 'react-bootstrap';
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { Dropdown } from 'react-bootstrap';
 import windowSize from 'react-window-size';
 
 import NavSearch from './NavSearch';
 import Aux from "../../../../../hoc/_Aux";
 import DEMO from "../../../../../store/constant";
 import * as actionTypes from "../../../../../store/actions";
+
+import SocketService from '../../../../../store/services/SocketService'
+let _socketService = SocketService.getInstance()
+
 
 class NavLeft extends Component {
 
@@ -23,7 +27,6 @@ class NavLeft extends Component {
             dropdownRightAlign = true;
         }
 
-
         return (
             <Aux>
                 <ul className="navbar-nav mr-auto">
@@ -31,18 +34,17 @@ class NavLeft extends Component {
                     <li className={navItemClass.join(' ')}>
                         <Dropdown alignRight={dropdownRightAlign}>
                             <Dropdown.Toggle variant={'link'} id="dropdown-basic">
-                                Dropdown
+                                {_socketService.getSocket().connected ? "Bağlandı" : "Bağlantı Yok"}
                             </Dropdown.Toggle>
                             <ul>
                                 <Dropdown.Menu>
-                                    <li><a className="dropdown-item" href={DEMO.BLANK_LINK}>Action</a></li>
-                                    <li><a className="dropdown-item" href={DEMO.BLANK_LINK}>Another action</a></li>
-                                    <li><a className="dropdown-item" href={DEMO.BLANK_LINK}>Something else here</a></li>
+                                    <li><a className="dropdown-item" href={DEMO.BLANK_LINK}>{_socketService.getSocketDate()}</a></li>
+                                    <li><a className="dropdown-item" href={DEMO.BLANK_LINK}>{_socketService.getSocket().id}</a></li>
                                 </Dropdown.Menu>
                             </ul>
                         </Dropdown>
                     </li>
-                    <li className="nav-item"><NavSearch/></li>
+                    <li className="nav-item"><NavSearch /></li>
                 </ul>
             </Aux>
         );
@@ -58,7 +60,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
     return {
-        onFullScreen: () => dispatch({type: actionTypes.FULL_SCREEN}),
+        onFullScreen: () => dispatch({ type: actionTypes.FULL_SCREEN }),
     }
 };
 

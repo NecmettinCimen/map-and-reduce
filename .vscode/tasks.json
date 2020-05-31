@@ -16,7 +16,7 @@
 		{
 			"type": "npm",
 			"script": "start",
-			"path": "Socket/",
+			"path": "Socket/socketmapandreduce/",
 			"problemMatcher": [],
 			"label": "npm: start - Socket",
 			"detail": "node index.js",

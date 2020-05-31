@@ -50,8 +50,8 @@ const routes = [
     { path: '/jobs/new', exact: true, name: 'Yeni Bir İş Oluştur', component: NewJob },
     { path: '/jobs/edit/:id/', exact: true, name: 'İş Düzenle', component: NewJob },
     { path: '/jobs/list', exact: true, name: 'İş Listem', component: ListJob },
-    { path: '/jobs/run', exact: true, name: 'İş Çalıştır', component: RunJob },
-    { path: '/jobs/detail', exact: true, name: 'İş Detayları', component: DetailJob },
+    { path: '/jobs/run/:id/', exact: true, name: 'İş Çalıştır', component: RunJob },
+    { path: '/jobs/detail/:id/', exact: true, name: 'İş Detayları', component: DetailJob },
 
 ];
 
