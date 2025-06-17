@@ -1,7 +1,7 @@
 
 
 import io from 'socket.io-client';
-const ENDPOINT = "https://socketmapandreduce.herokuapp.com/";
+const ENDPOINT = "https://map-and-reduce-socket.necmettincimen.xyz";
 
 export default class SocketService {
     static instance = null;
