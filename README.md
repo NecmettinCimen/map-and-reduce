@@ -51,7 +51,9 @@
 ## About The Project
 
 This project aims to distribute costly computations across multiple systems and then merge the results. The main problem addressed is to offload heavy tasks from a single system to distributed systems, process them in parallel, and combine the results efficiently.
-
+| WEB | 
+| --- | 
+| [![WEB](mapandreduce.png)](mapandreduce.png)
 ### Built With
 
 * [React.js](https://react.dev/) – Frontend UI
