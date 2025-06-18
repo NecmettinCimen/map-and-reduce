@@ -11,7 +11,7 @@
   <h3 align="center">Map and Reduce</h3>
 
   <p align="center">
-    Distributed Map-Reduce Application
+    Map and reduce algorithm application with Web API and Socket.io real-time communication
     <br />
     <a href="https://github.com/necmettincimen/map-and-reduce"><strong>Explore the docs »</strong></a>
     <br />
@@ -50,11 +50,15 @@
 
 ## About The Project
 
+Map and reduce algorithm application with Web API and Socket.io real-time communication
+
 This project aims to distribute costly computations across multiple systems and then merge the results. The main problem addressed is to offload heavy tasks from a single system to distributed systems, process them in parallel, and combine the results efficiently.
 | WEB | 
 | --- | 
 | [![WEB](mapandreduce.png)](mapandreduce.png)
 ### Built With
+
+**Technologies:** `csharp` `dotnet9` `entityframework` `sqlite` `nodejs` `socketio` `docker`
 
 * [React.js](https://react.dev/) – Frontend UI
 * [Node.js](https://nodejs.org/) – Backend server
