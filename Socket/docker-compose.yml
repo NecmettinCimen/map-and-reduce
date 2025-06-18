@@ -1,14 +1,12 @@
 version: '3.8'
 
 services:
-  mapandreduceapi:
-    container_name: map-and-reduce
+  mapandreducesocket:
+    container_name: map-and-reduce-socket
     build:
       context: .
       dockerfile: Dockerfile
     restart: always
-    environment:
-      - ASPNETCORE_URLS=http://+:5000
 
 networks:
   default:
